@@ -1,0 +1,322 @@
+/* Font Face */
+
+@font-face {
+    font-family: 'CnG Script';
+    src: url('../fonts/CnGScriptRegular.eot');
+    src: url('../fonts/CnGScriptRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGScriptRegular.woff2') format('woff2'),
+        url('../fonts/CnGScriptRegular.woff') format('woff'),
+        url('../fonts/CnGScriptRegular.ttf') format('truetype'),
+        url('../fonts/CnGScriptRegular.svg#CnGScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CnG Condensed';
+    src: url('../fonts/CnGCondensedRegular.eot');
+    src: url('../fonts/CnGCondensedRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGCondensedRegular.woff2') format('woff2'),
+        url('../fonts/CnGCondensedRegular.woff') format('woff'),
+        url('../fonts/CnGCondensedRegular.ttf') format('truetype'),
+        url('../fonts/CnGCondensedRegular.svg#CnGCondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CnG Sans';
+    src: url('../fonts/CnGSansRegular.eot');
+    src: url('../fonts/CnGSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGSansRegular.woff2') format('woff2'),
+        url('../fonts/CnGSansRegular.woff') format('woff'),
+        url('../fonts/CnGSansRegular.ttf') format('truetype'),
+        url('../fonts/CnGSansRegular.svg#CnGSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Headings */
+
+p {
+    font-size: 0.75em;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'CnG Script';
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    font-family: 'CnG Script';
+    font-size: 2em;
+    text-align: center;
+    padding: 0;
+}
+
+h3 {
+    font-family: 'CnG Condensed';
+    font-size: 1.5em;
+    padding: 1vh 2.5vh;
+    margin: 0;
+    background-color: #FFCB66;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+h4 {
+    font-family: 'CnG Condensed';
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #80B7F5;
+    background-image: url('../content/blue_background_pattern-01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+}
+
+nav a > img {
+    height: 15vw;
+}
+
+nav a > div > img {
+    height: 5vw;
+    width: 5vw;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCB66;
+    border: 0.1em solid black;
+    border-radius: 2.5vw;
+    height: 12vw;
+    width: 12vw;
+}
+
+/* Main */
+main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+}
+
+
+
+img {
+    display: block;
+}
+
+.tekstblok {
+    font-family: 'CnG Sans';
+    padding: 2.5vh;
+    background-color: #FEFAEF;
+    border: 0.1em solid black;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+/* Filter Header */
+
+header {
+padding: 1rem;
+margin: 0;
+}
+
+header img {
+    height: 5vw;
+    width: 5vw;
+}
+
+.zoeken {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #ADD6B8;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.cta > div:first-of-type {
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #CCB6DC;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    width: 50vw;
+}
+
+.cta > div:last-of-type {
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #F7A374;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    width: 50vw;
+}
+
+/* Shops Cards (Articles) */
+
+article {
+    background-color: #FEFAEF;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+article > div {
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+article > div > div {
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+    background-color: #00000075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article p:first-of-type {
+    font-family: 'CnG Condensed';
+    color: #946FAF; 
+    font-size: 1em;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+
+}
+
+article p:last-of-type {
+    font-family: 'CnG Condensed';
+    color: #F7A374; 
+    font-size: 1em;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+article p:nth-of-type(2) {
+    font-family: 'CnG Sans';
+    color: #000000; 
+    font-size: 0.75em;
+    margin-left: 1rem;
+    margin: 0rem 1rem 0.5rem 1rem;
+}
+
+article h2 {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+article:nth-of-type(1) > div {
+    background-image: url('../content/shop_background_hoenson.png');
+}
+
+article:nth-of-type(2) > div {
+    background-image: url('../content/shop_background_studioonrust.png');
+}
+
+article:nth-of-type(3) > div {
+    background-image: url('../content/shop_background_thisishappening.png');
+}
+
+article:nth-of-type(4) > div {
+    background-image: url('../content/shop_background_futuredaysshop.png');
+}
+
+article:nth-of-type(5) > div {
+    background-image: url('../content/shop_background_hempsted.png');
+}
+
+/* Hoensons pagina */
+
+.hoofdbeeld {
+    height: 65vh;
+    background-image: url('../content/hoensons_interieur.png');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 0rem 0rem 0.5rem 0.5rem; 
+    margin-bottom: 1rem;
+}
+
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Menu */
+
+.menuitem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #FFCB66;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+.menuitem img {
+    height: 5vw;
+    width: 5vw;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 0rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    margin-top: 2.5rem;
+}
