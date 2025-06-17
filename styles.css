@@ -1,0 +1,354 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'CnG Script';
+    src: url('../fonts/CnGScriptRegular.eot');
+    src: url('../fonts/CnGScriptRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGScriptRegular.woff2') format('woff2'),
+        url('../fonts/CnGScriptRegular.woff') format('woff'),
+        url('../fonts/CnGScriptRegular.ttf') format('truetype'),
+        url('../fonts/CnGScriptRegular.svg#CnGScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CnG Condensed';
+    src: url('../fonts/CnGCondensedRegular.eot');
+    src: url('../fonts/CnGCondensedRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGCondensedRegular.woff2') format('woff2'),
+        url('../fonts/CnGCondensedRegular.woff') format('woff'),
+        url('../fonts/CnGCondensedRegular.ttf') format('truetype'),
+        url('../fonts/CnGCondensedRegular.svg#CnGCondensedRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CnG Sans';
+    src: url('../fonts/CnGSansRegular.eot');
+    src: url('../fonts/CnGSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CnGSansRegular.woff2') format('woff2'),
+        url('../fonts/CnGSansRegular.woff') format('woff'),
+        url('../fonts/CnGSansRegular.ttf') format('truetype'),
+        url('../fonts/CnGSansRegular.svg#CnGSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Basis */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    padding-top: 5vw;
+}
+
+body {
+    font-family: 'CnG Sans', sans-serif;
+    background-color: #86B5E1;
+    background-image: url('../content/blue_background_pattern_rackindle.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    color: #000;
+    font-size: 0.80rem;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav */
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li:first-child img {
+    height: 12vw;
+    max-height: 80px;
+}
+
+header nav ul li:last-child img {
+    height: 10vw;
+    width: 10vw;
+    background-color: #FFCB66;
+    padding: 2.5vw;
+    border: 0.125rem solid #000000;
+    border-radius: 0.75rem;
+}
+
+header nav {
+    margin-bottom: 1rem;
+}
+
+/* Header zoek en knoppen */
+
+header .zoeken {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADD6B8;
+    border: 0.125rem solid #000000;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header .zoeken h2 {
+    font-family: 'CnG Condensed';
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header .zoeken img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+header .cta ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+header .cta ul li {
+    flex: 1;
+}
+
+header .cta ul li a {
+    display: block;
+    text-align: center;
+    font-family: 'CnG Condensed';
+    font-size: 1rem;
+    padding: 0.75rem;
+    border: 0.125rem solid #000000;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+header .cta ul li:first-child a {
+    background-color: #CCB6DC;
+    border-radius: 0.75rem;
+}
+
+header .cta ul li:last-child a {
+    background-color: #F7A374;
+    border-radius: 0.75rem;
+}
+
+
+
+/* Content opmaak */
+h1 {
+    font-family: 'CnG Script';
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+}
+
+main h2 {
+    font-family: 'CnG Script';
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+section h2 {
+    font-family: 'CnG Condensed';
+    background-color: #FFCB66;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem;
+    border: 0.125rem solid black;
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    background-color: #FEFAEF;
+    border: 0.125rem solid black;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-family: 'CnG Sans';
+    font-size: 0.80rem;
+    margin-bottom: 1.5rem;
+}
+
+section address {
+    background-color: #FEFAEF;
+    border: 0.125rem solid black;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-family: 'CnG Sans';
+    font-size: 0.80rem;
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+
+
+/* Hoofdbeeld (achtergond Winkel pagina)*/
+
+.hoofdbeeld {
+    height: 65vh;
+    background-image: url('../content/hoensons_interieur.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0rem 0rem 0.75rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Articles */
+
+article {
+    border: 2px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #FEFAEF;
+    margin-bottom: 2rem;
+    padding: 0;
+    font-family: 'CnG Sans';
+    text-decoration: none;
+}
+
+article a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+article h3 {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'CnG Script';
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+article p:nth-of-type(1) {
+    font-family: 'CnG Condensed';
+    font-weight: bold;
+    font-size: 1rem;
+    color: #946FAF;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+}
+
+article p:nth-of-type(2) {
+    font-size: 0.80rem;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+article p:nth-of-type(3) {
+    font-family: 'CnG Condensed';
+    font-weight: bold;
+    font-size: 1rem;
+    color: #F7A374;
+    padding: 0.5rem 1rem 1rem 1rem;
+    margin: 0;
+}
+
+/* Article Fotos */
+
+article:nth-of-type(1) h3 {
+    background-image: url('../content/shop_background_hoenson.jpg');
+    border-radius: 1rem 1rem 0 0;
+}
+
+article:nth-of-type(2) h3 {
+    background-image: url('../content/shop_background_studioonrust.jpg');
+    border-radius: 1rem 1rem 0 0;
+}
+
+article:nth-of-type(3) h3 {
+    background-image: url('../content/shop_background_thisishappening.jpg');
+    border-radius: 1rem 1rem 0 0;
+}
+
+article:nth-of-type(4) h3 {
+    background-image: url('../content/shop_background_futuredaysshop.jpg');
+    border-radius: 1rem 1rem 0 0;
+}
+
+article:nth-of-type(5) h3 {
+    background-image: url('../content/shop_background_hempsted.jpg');
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+/* Sec nav */
+main nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+main nav ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCB66;
+    border: 0.125rem solid #000000;
+    border-radius: 0.75rem;
+    font-family: 'CnG Condensed';
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+main nav ul li a img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: contain;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    font-family: 'CnG Condensed';
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 2rem 0rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    margin-top: 2.5rem;
+}
